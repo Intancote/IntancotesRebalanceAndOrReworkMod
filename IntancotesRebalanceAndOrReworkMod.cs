@@ -7,10 +7,21 @@ using IntancotesRebalanceAndOrReworkMod;
 
 namespace IntancotesRebalanceAndOrReworkMod;
 
-public class IntancotesRebalanceAndOrReworkMod : BloonsTD6Mod
 {
     public override void OnApplicationStart()
     {
         ModHelper.Msg<IntancotesRebalanceAndOrReworkMod>("IntancotesRebalanceAndOrReworkMod loaded!");
+    }
+
+    public class IntancotesRebalanceAndOrReworkMod : BloonsTD6Mod
+    {
+
+        /// <summary>
+        /// Support the Ultimate Crosspathing Mod
+        /// <br />
+        /// That mod will handle actually allowing the upgrades to happen in the UI
+        /// </summary>
+        public override bool IsValidCrosspath(int[] tiers) =>
+            ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);
     }
 }

@@ -1,0 +1,8 @@
+﻿WorksOnVersion = "35.0";
+Name = "Intancote's Rebalances/Reworks";
+Version = "1.0.0";
+Author = "Intancote";
+Description = "A mod for BloonsTD6 that will (hopefully) rebalance/rework every tower/hero in the game!";
+RepoName = "IntancotesRebalanceAndOrReworkMod";
+RepoOwner = "Intancote";
+SquareIcon = true;
